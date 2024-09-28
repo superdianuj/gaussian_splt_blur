@@ -158,8 +158,26 @@ chmod +x commands.sh
 |                | Motion-Blurred | Lens-Blurred | Gaussian-Blurred |
 |----------------|:--------------:|:------------:|:----------------:|
 | NAFNet+GS      | ![](11.gif)    | ![](12.gif)  | ![](13.gif)      |
+|                | SSIM: 0.714    | SSIM: 0.826  | SSIM: 0.777      |
+|                | PSNR: 31.804   | PSNR: 33.820 | PSNR: 32.108     |
+|                | LPIPS: 0.272   | LPIPS: 0.086 | LPIPS: 0.194     |
 | Real-ESRGAN+GS | ![](21.gif)    | ![](22.gif)  | ![](23.gif)      |
+|                | SSIM: 0.719    | SSIM: 0.760  | SSIM: 0.634      |
+|                | PSNR: 31.431   | PSNR: 32.518 | PSNR: 28.845     |
+|                | LPIPS: 0.357   | LPIPS: 0.157 | LPIPS: 0.512     |
 | BAD-Gaussians  | ![](31.gif)    | ![](32.gif)  | ![](33.gif)      |
-## Conclusion
+|                | SSIM: 0.734    | SSIM: 0.787  | SSIM: 0.767      |
+|                | PSNR: 31.741   | PSNR: 33.429 | PSNR: 32.754     |
+|                | LPIPS: 0.380   | LPIPS: 0.144 | LPIPS: 0.232     |
 
 Using deblurring models with Gaussian splatting is definitely a good idea as it leads to faithful novel views reconstruction as compared to BAD-Gaussians, with relatively modest metric improvement.
+
+
+
+## Reference
+
+[1] https://github.com/WU-CVGL/BAD-Gaussians
+
+[2] https://github.com/megvii-research/NAFNet
+
+[3] https://github.com/xinntao/Real-ESRGAN
