@@ -109,9 +109,9 @@ cd ../../../..
 
 ##### Real-ESRGAN
 ```code
-cd real_blur/Real-ESRGAN
+cd real_blur/Real-ESRGAN/weights
 wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth
-cd ../..
+cd ../../..
 ```
 
 
