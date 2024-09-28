@@ -155,10 +155,11 @@ chmod +x commands.sh
 
 ## Results
 
-| ![Performance Comparison](performance_comp.png) |
-|:--:|
-| *Comparison of novel views and metrics of Gaussian splatting variant (BAD-Gaussians) and simple GS + deblurring models (Training time= 15K epochs)* |
-
+|                | Motion-Blurred | Lens-Blurred | Gaussian-Blurred |
+|----------------|:--------------:|:------------:|:----------------:|
+| NAFNet+GS      | ![](11.gif)    | ![](12.gif)  | ![](13.gif)      |
+| Real-ESRGAN+GS | ![](21.gif)    | ![](22.gif)  | ![](23.gif)      |
+| BAD-Gaussians  | ![](31.gif)    | ![](32.gif)  | ![](33.gif)      |
 ## Conclusion
 
 Using deblurring models with Gaussian splatting is definitely a good idea as it leads to faithful novel views reconstruction as compared to BAD-Gaussians, with relatively modest metric improvement.
