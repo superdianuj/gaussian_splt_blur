@@ -153,8 +153,12 @@ chmod +x commands.sh
 ```
 
 
+## Results
+
 | ![Performance Comparison](performance_comp.png) |
 |:--:|
 | *Comparison of novel views and metrics of Gaussian splatting variant (BAD-Gaussians) and simple GS + deblurring models (Training time= 15K epochs)* |
 
+## Conclusion
 
+Using deblurring models with Gaussian splatting is definitely a good idea as it leads to faithful novel views reconstruction as compared to BAD-Gaussians, with relatively modest metric improvement.
